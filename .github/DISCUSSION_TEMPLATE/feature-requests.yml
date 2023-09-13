@@ -12,3 +12,41 @@ body:
       description: Provide a concise name for the feature
     validations:
       required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: A brief and clear label of the feature. Explain what problem it solves or what improvement it brings.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Use Case
+      description: Describe the specific scenarios or situations where this feature would be useful.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  - type: input
+    id: benefit
+    attributes:
+      label: Benefit
+      description: Explain the benefits of implementing this feature, such as increased user engagement, improved user experience, or revenue potential.
+    validations:
+      required: true
+  - type: input
+    id: users
+    attributes:
+      label: Users
+      description: Specify the target user or customer segment for this feature, if applicable.
+    validations:
+      required: true

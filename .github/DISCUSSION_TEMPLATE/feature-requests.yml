@@ -5,21 +5,21 @@ body:
     attributes:
       value: |
         # Feature Details
-  - type: input
+  - type: textarea
     id: name
     attributes:
       label: Feature Name
       description: Provide a concise name for the feature
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: description
     attributes:
       label: Description
       description: A brief and clear label of the feature. Explain what problem it solves or what improvement it brings.
     validations:
       required: true
-  - type: input
+  - type: textarea
     attributes:
       label: Use Case
       description: Describe the specific scenarios or situations where this feature would be useful.
@@ -36,14 +36,14 @@ body:
         - Critical
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: benefit
     attributes:
       label: Benefit
       description: Explain the benefits of implementing this feature, such as increased user engagement, improved user experience, or revenue potential.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: users
     attributes:
       label: Users

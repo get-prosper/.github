@@ -4,11 +4,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Markdown header
+        ## Feature Details
   - type: input
-    id: has-id
+    id: name
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Feature Name
+      description: [A brief and clear description of the feature. Explain what problem it solves or what improvement it brings.]
     validations:
       required: true

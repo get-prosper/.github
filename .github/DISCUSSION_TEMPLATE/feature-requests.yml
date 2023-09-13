@@ -4,3 +4,9 @@ body:
   - type: markdown
     attributes:
       value: "#Feature Details"
+  - type: input
+    attributes:
+      label: Feature Name
+      description: [Provide a concise name for the feature]
+    validations:
+      required: true

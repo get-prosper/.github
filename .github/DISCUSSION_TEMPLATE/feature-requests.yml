@@ -119,3 +119,22 @@ body:
       description: Outline any specific testing criteria or scenarios that need to be addressed during development and quality assurance.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Marketing and Communication
+  - type: input
+    id: plan
+    attribute:
+      label: Communications Plan
+      description: Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.
+    validations:
+      required: true
+  - type: input
+    id: impact
+    attribute:
+      label: Sales Impact
+      description: Provide insights into how this feature might impact the sales team and their efforts.
+    validations:
+      required: true

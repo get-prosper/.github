@@ -4,72 +4,66 @@ body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
+        #Feature Details
   - type: input
-    id: has-id
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+      label: Feature Name
+      description: [Provide a concise name for the feature]
     validations:
       required: true
+  - type: input
+    attributes:
+      label: Description
+      description: [A brief and clear label of the feature. Explain what problem it solves or what improvement it brings.]
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Use Case
+      description: [Describe the specific scenarios or situations where this feature would be useful.]
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Benefit
+      description: [Explain the benefits of implementing this feature, such as increased user engagement, improved user experience, or revenue potential.]
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: User
+      description: [Specify the target user or customer segment for this feature, if applicable.]
+    validations:
+      required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       #Technical Details
   # - type: input
   #   attributes:
-  #     label: Feature Details
-  #     description: Feature Name
-  #     placeholder: [Provide a concise name for the feature]
+  #     label: Integration
+  #     description: [Explain how this feature will integrate with existing features, if applicable.]
   #   validations:
   #     required: true
   # - type: input
   #   attributes:
-  #     description: Description
-  #     placeholder: [A brief and clear description of the feature. Explain what problem it solves or what improvement it brings.]
-  #   validations:
-  #     required: true
-  # - type: input
-  #   attributes:
-  #     description: Use Case
-  #     placeholder: [Describe the specific scenarios or situations where this feature would be useful.]
+  #     label: Dependencies
+  #     description: [List any third-party tools, services, or APIs that this feature may depend on.]
   #   validations:
   #     required: true
   # - type: dropdown
   #   attributes:
-  #     description: Priority
-  #     options:
-  #       - Low
-  #       - Medium
-  #       - High
-  #       - Critical
-  #   validations:
-  #     required: true
-  # - type: input
-  #   attributes:
-  #     description: Benefit
-  #     placeholder: [Explain the benefits of implementing this feature, such as increased user engagement, improved user experience, or revenue potential.]
-  #   validations:
-  #     required: true
-  # - type: input
-  #   attributes:
-  #     description: User
-  #     placeholder: [Specify the target user or customer segment for this feature, if applicable.]
-  #   validations:
-  #     required: true
-  # - type: input
-  #   attributes:
-  #     label: Technical Details
-  #     description: Integration
-  #     placeholder: [Explain how this feature will integrate with existing features, if applicable.]
-  #   validations:
-  #     required: true
-  # - type: input
-  #   attributes:
-  #     description: Dependencies
-  #     placeholder: [List any third-party tools, services, or APIs that this feature may depend on.]
-  #   validations:
-  #     required: true
-  # - type: dropdown
-  #   attributes:
-  #     description: Technical
-  #     placeholder:
+  #     label: Technical
   #     options:
   #       - Low
   #       - Medium
@@ -79,34 +73,43 @@ body:
   #     required: true
   # - type: input
   #   attributes:
-  #     description: Estimated
-  #     placeholder: [Provide an estimate of the time required for development, if known.]
+  #     label: Estimated
+  #     description: [Provide an estimate of the time required for development, if known.]
+  #   validations:
+  #     required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       #Design and UI/UX
+  # - type: input
+  #   attributes:
+  #     label: Design
+  #     description: [Describe any specific design requirements or considerations for this feature, such as branding, color schemes, or user interface elements.]
   #   validations:
   #     required: true
   # - type: input
   #   attributes:
-  #     label: Design and UI/UX
-  #     description: Design
-  #     placeholder: [Describe any specific design requirements or considerations for this feature, such as branding, color schemes, or user interface elements.]
+  #     label: Wireframes/Visuals
+  #     description: [Attach any wireframes, mockups, or visuals that help illustrate the desired user interface for this feature.]
   #   validations:
   #     required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       #Testing and QA
   # - type: input
   #   attributes:
-  #     description: Wireframes/Visuals
-  #     placeholder: [Attach any wireframes, mockups, or visuals that help illustrate the desired user interface for this feature.]
+  #     label: Testing
+  #     description: [Outline any specific testing criteria or scenarios that need to be addressed during development and quality assurance.]
   #   validations:
   #     required: true
-  # - type: input
+  # - type: markdown
   #   attributes:
-  #     label: Testing and QA
-  #     description: Testing
-  #     placeholder: [Outline any specific testing criteria or scenarios that need to be addressed during development and quality assurance.]
-  #   validations:
-  #     required: true
+  #     value: |
+  #       #Development Time Estimate
   # - type: dropdown
   #   attributes:
-  #     label: Development Time Estimate
-  #     description: Testing
+  #     label: Testing
   #     options:
   #       - Days
   #       - Weeks
@@ -114,23 +117,29 @@ body:
   #       - Unsure
   #   validations:
   #     required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       #Marketing and Communication
   # - type: input
   #   attribute:
-  #     label: Marketing and Communication
-  #     description: Communications Plan
-  #     placeholder: [Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.]
+  #     label: Communications Plan
+  #     description: [Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.]
   #   validations:
   #     required: true
   # - type: input
   #   attribute:
-  #     description: Sales Impact
-  #     placeholder: [Provide insights into how this feature might impact the sales team and their efforts.]
+  #     label: Sales Impact
+  #     description: [Provide insights into how this feature might impact the sales team and their efforts.]
   #   validations:
   #     required: true
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       #Additional Notes
   # - type: input
   #   attribute:
-  #     label: Additional Notes
-  #     description: Sales Impact
-  #     placeholder: [Include any additional information, ideas, or considerations that may be relevant to this feature request.]
+  #     label: Sales Impact
+  #     description: [Include any additional information, ideas, or considerations that may be relevant to this feature request.]
   #   validations:
   #     required: true

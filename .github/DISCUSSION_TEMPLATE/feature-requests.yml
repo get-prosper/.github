@@ -123,25 +123,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Marketing and Communication
-  - type: textarea
-    id: plan
-    attributes:
-      label: Communications Plan
-      description: Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.
-    validations:
-      required: true
-  - type: textarea
-    id: impact
-    attributes:
-      label: Sales Impact
-      description: Provide insights into how this feature might impact the sales team and their efforts.
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
         # Additional Notes
   - type: textarea
     id: notes

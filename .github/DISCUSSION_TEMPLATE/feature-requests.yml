@@ -4,11 +4,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Feature Details
+        ## Markdown header
+        And some more markdown
   - type: input
-    id: name
+    id: has-id
     attributes:
-      label: Feature Name
-      description: [Provide a concise name for the feature]
+      label: Suggestions
+      description: A description about suggestions to help you
     validations:
       required: true

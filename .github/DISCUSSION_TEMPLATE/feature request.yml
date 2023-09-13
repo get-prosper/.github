@@ -1,20 +1,20 @@
 title: "[Feature Request] "
 labels: ["Feature Request Form"]
 body:
-  - type: markdown
+  - type: input
     attributes:
       label: Feature Details
       description: Feature Name
       placeholder: [Provide a concise name for the feature]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Description
       placeholder: [A brief and clear description of the feature. Explain what problem it solves or what improvement it brings.]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Use Case
       placeholder: [Describe the specific scenarios or situations where this feature would be useful.]
@@ -30,27 +30,26 @@ body:
         - Critical
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Benefit
       placeholder: [Explain the benefits of implementing this feature, such as increased user engagement, improved user experience, or revenue potential.]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: User
       placeholder: [Specify the target user or customer segment for this feature, if applicable.]
     validations:
       required: true
-
-  - type: markdown
+  - type: input
     attributes:
       label: Technical Details
       description: Integration
       placeholder: [Explain how this feature will integrate with existing features, if applicable.]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Dependencies
       placeholder: [List any third-party tools, services, or APIs that this feature may depend on.]
@@ -67,35 +66,32 @@ body:
         - Unsure
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Estimated
       placeholder: [Provide an estimate of the time required for development, if known.]
     validations:
       required: true
-
-  - type: markdown
+  - type: input
     attributes:
       label: Design and UI/UX
       description: Design
       placeholder: [Describe any specific design requirements or considerations for this feature, such as branding, color schemes, or user interface elements.]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attributes:
       description: Wireframes/Visuals
       placeholder: [Attach any wireframes, mockups, or visuals that help illustrate the desired user interface for this feature.]
     validations:
       required: true
-
-  - type: markdown
+  - type: input
     attributes:
       label: Testing and QA
       description: Testing
       placeholder: [Outline any specific testing criteria or scenarios that need to be addressed during development and quality assurance.]
     validations:
       required: true
-
   - type: dropdown
     attributes:
       label: Development Time Estimate
@@ -107,22 +103,20 @@ body:
         - Unsure
     validations:
       required: true
-
-  - type: markdown
+  - type: input
     attribute:
       label: Marketing and Communication
       description: Communications Plan
       placeholder: [Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.]
     validations:
       required: true
-  - type: markdown
+  - type: input
     attribute:
       description: Sales Impact
       placeholder: [Provide insights into how this feature might impact the sales team and their efforts.]
     validations:
       required: true
-
-  - type: markdown
+  - type: input
     attribute:
       label: Additional Notes
       description: Sales Impact

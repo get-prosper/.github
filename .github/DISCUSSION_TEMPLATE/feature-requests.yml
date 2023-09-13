@@ -55,14 +55,14 @@ body:
     attributes:
       value: |
         # Technical Details
-  - type: input
+  - type: textarea
     id: integration
     attributes:
       label: Integration
       description: Explain how this feature will integrate with existing features, if applicable.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: dependencies
     attributes:
       label: Dependencies
@@ -95,14 +95,14 @@ body:
     attributes:
       value: |
         # Design and UI/UX
-  - type: input
+  - type: textarea
     id: design
     attributes:
       label: Design
       description: Describe any specific design requirements or considerations for this feature, such as branding, color schemes, or user interface elements.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: visuals
     attributes:
       label: Wireframes/Visuals
@@ -112,7 +112,7 @@ body:
     attributes:
       value: |
         # Testing and QA
-  - type: input
+  - type: textarea
     id: testing
     attributes:
       label: Testing
@@ -124,17 +124,27 @@ body:
     attributes:
       value: |
         # Marketing and Communication
-  - type: input
+  - type: textarea
     id: plan
-    attribute:
+    attributes:
       label: Communications Plan
       description: Suggest how this feature should be communicated to existing and potential customers. Include ideas for blog posts, emails, or social media announcements.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: impact
-    attribute:
+    attributes:
       label: Sales Impact
       description: Provide insights into how this feature might impact the sales team and their efforts.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Additional Notes
+  - type: textarea
+    id: notes
+    attribute:
+      label: Additional Notes
+      description: Include any additional information, ideas, or considerations that may be relevant to this feature request.

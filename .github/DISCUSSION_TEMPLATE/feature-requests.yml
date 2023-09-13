@@ -1,4 +1,4 @@
-title: "Feature Request "
+title: "Feature Request for "
 labels: "Feature Request Form"
 body:
   - type: markdown
@@ -138,3 +138,13 @@ body:
       description: Provide insights into how this feature might impact the sales team and their efforts.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Additional Notes
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Include any additional information, ideas, or considerations that may be relevant to this feature request.

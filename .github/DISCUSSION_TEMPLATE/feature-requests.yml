@@ -49,8 +49,8 @@ body:
     attributes:
       label: Target Users
       description: Specify the target user or customer segment for this feature, if applicable.
-    validations:
-      required: true
+    # validations:
+    #   required: true
 
   - type: markdown
     attributes:

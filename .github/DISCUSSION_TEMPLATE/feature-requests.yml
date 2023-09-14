@@ -15,12 +15,13 @@ body:
   - type: dropdown
     id: priority
     attributes:
-      label: Priority
+      label: Estimated Priority
       options:
         - Low
         - Medium
         - High
         - Critical
+        - Unsure
   - type: textarea
     id: description
     attributes:
@@ -58,7 +59,7 @@ body:
   - type: dropdown
     id: complexity
     attributes:
-      label: Technical Complexity
+      label: Estimated Technical Complexity
       options:
         - Low
         - Medium
